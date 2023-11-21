@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/circular-font.css" />
+    <style>
+      html {
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+        font-size: 2em;
+        background-color: bisque;
+      }
+      fieldset {
+        text-align: center;
+      }
+      h1 {
+        text-align: center;
+      }
+      button {
+        border-radius: 10px;
+      }
+    </style>
+    <title>EsercizioWeek9Day2</title>
+  </head>
+  <body>
+    <h1>Family Wallet</h1>
+    <form>
+      <fieldset>
+        <legend>Son Wallet</legend>
+        <label for="sonDeposit">Deposit</label>
+        <input
+          type="number"
+          name="sonDeposit"
+          id="sonDeposit"
+          placeholder="deposit"
+          required
+        />
+        <label for="sonWithdraw">Withdraw</label>
+        <input
+          type="number"
+          name="sonWithdraw"
+          id="sonWithdraw"
+          placeholder="widthdraw"
+          required
+        />
+        <label for="sonBalance">Balance</label>
+        <input
+          type="number"
+          name="sonBalance"
+          id="sonBalance"
+          value="0"
+          disabled
+        />
+        <button type="button" id="sonButton">Calculate</button>
+      </fieldset>
+      <fieldset>
+        <legend>Mother Walllet</legend>
+        <label for="motherDeposit">Deposit</label>
+        <input
+          type="number"
+          name="motherDeposit"
+          id="motherDeposit"
+          placeholder="deposit"
+          required
+        />
+        <label for="motherWithdraw">Withdraw</label>
+        <input
+          type="number"
+          name="motherWithdraw"
+          id="motherWithdraw"
+          placeholder="widthdraw"
+          required
+        />
+        <label for="motherBalance">Balance</label>
+        <input
+          type="number"
+          name="motherBalance"
+          id="motherBalance"
+          value="0"
+          disabled
+        />
+        <button type="button" id="motherButton">Calculate</button>
+      </fieldset>
+    </form>
+    <script src="./assets/ts/index.js"></script>
+  </body>
+</html>
